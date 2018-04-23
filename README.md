@@ -62,7 +62,7 @@ You now have your `Parse` method working properly. Now, let's get into our Progr
 static void Main(string[] args)
 {
     // DON'T FORGET TO LOG YOUR STEPS
-    // Grab the path from Environment.CurrentDirectory + the name of your file
+    // Grab the path from the name of your file
 
     // use File.ReadAllLines(path) to grab all the lines from your csv file
     // Log and error if you get 0 lines and a warning if you get 1 line
