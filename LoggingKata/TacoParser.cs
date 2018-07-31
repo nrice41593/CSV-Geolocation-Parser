@@ -1,7 +1,7 @@
 ﻿namespace LoggingKata
 {
     /// <summary>
-    /// Parses a POI file to locate all the TacoBells
+    /// Parses a POI file to locate all the Taco Bells
     /// </summary>
     public class TacoParser
     {
@@ -11,8 +11,8 @@
         {
             logger.LogInfo("Begin parsing");
 
-            //DO not fail if one record parsing fails, return null
-            return null; //TODO Implement
+            // Do not fail if one record parsing fails, return null
+            return null; // TODO Implement
         }
     }
 }
