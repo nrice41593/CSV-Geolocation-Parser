@@ -12,7 +12,6 @@ Here's what you'll need to do for this Kata:
     2. Implement the Parse Method
     3. Use the [GeoCoordinate.NetCore](https://www.nuget.org/packages/GeoCoordinate.NetCore/) NuGet package to calculate distance between two points
 3. Reduce the logging verbosity and rerun
-4. Push your changes (`git push`), create a pull request, and add request a review from your instructor.
 
 ## Kata Details
 
@@ -36,12 +35,12 @@ public ITrackable Parse(string line)
         // Log that and return null
     }
 
-    // grab the long from your array at index 0
-    // grab the lat from your array at index 1
+    // grab the latitude from your array at index 0
+    // grab the longitude from your array at index 1
     // grab the name from your array at index 2
 
     // Your going to need to parse your string as a `double`
-    // which is similar to parse a string as an `int`
+    // which is similar to parsing a string as an `int`
 
     // You'll need to create a TacoBell class
     // that conforms to ITrackable
@@ -68,7 +67,7 @@ static void Main(string[] args)
     // Log and error if you get 0 lines and a warning if you get 1 line
 
     // Create a new instance of your TacoParser class
-    // Grab an IEnumerable of locations using the Select command: var locations = lines.Select(line => parser.Parse(line));
+    // Grab an IEnumerable of locations using the Select command: var locations = lines.Select(parser.Parse);
 
     // Now, here's the new code
 
@@ -81,7 +80,7 @@ static void Main(string[] args)
 
     // Now, do another loop on the locations with the scope of your first loop, so you can grab the "destination" location (perhaps: `locB`)
     // Create a new Coordinate with your locB's lat and long
-    // Now, compare the two using `origin.GetDistanceTo(distance)`, which returns a double
+    // Now, compare the two using `.GetDistanceTo()`, which returns a double
     // If the distance is greater than the currently saved distance, update the distance and the two `ITrackable` variables you set above
 
     // Once you've looped through everything, you've found the two Taco Bells furthest away from each other.
