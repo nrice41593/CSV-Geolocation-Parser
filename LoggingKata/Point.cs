@@ -1,4 +1,6 @@
-﻿namespace LoggingKata
+﻿
+
+namespace LoggingKata
 {
     public struct Point
     {

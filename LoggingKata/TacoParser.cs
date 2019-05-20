@@ -9,7 +9,7 @@
         
         public ITrackable Parse(string line)
         {
-            logger.LogInfo("Begin parsing");
+            //logger.LogInfo("Begin parsing");
             if (line == null)
             {
                 return null;
@@ -32,7 +32,7 @@
                 longitude = double.Parse(cells[1]);
 
             }
-            catch (System.Exception ex)
+            catch
             {
                 return null;
             }

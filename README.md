@@ -78,7 +78,7 @@ static void Main(string[] args)
     // Do a loop for your locations to grab each location as the origin (perhaps: `locA`)
     // Create a new corA Coordinate with your locA's lat and long
 
-    // Now, do another loop on the locations with the scope of your first loop, so you can grab the "destination" location (perhaps: `locB`)
+    // Now, do another loop on the locations within the scope of your first loop, so you can grab the "destination" location (perhaps: `locB`)
     // Create a new Coordinate with your locB's lat and long
     // Now, compare the two using `.GetDistanceTo()`, which returns a double
     // If the distance is greater than the currently saved distance, update the distance and the two `ITrackable` variables you set above
