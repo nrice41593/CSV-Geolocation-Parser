@@ -27,7 +27,7 @@ namespace LoggingKata
 
             logger.LogInfo($"Lines: {lines[0]}");
 
-            var parser = new TacoParser();
+            TacoParser parser = new TacoParser();
 
             var locations = lines.Select(parser.Parse).ToArray();
 
@@ -47,18 +47,17 @@ namespace LoggingKata
                 {
                     corB.Latitude = locB.Location.Latitude;
                     corB.Longitude = locB.Location.Longitude;
-                    
+
                     if (corA.GetDistanceTo(corB) > longestDistance)
                     {
                         longestDistance = corA.GetDistanceTo(corB);
                         tacoBell1 = locA;
                         tacoBell2 = locB;
                     }
-
                 }
-
             }
-            Console.WriteLine($"{tacoBell1.Name} {tacoBell2.Name}");
+            Console.WriteLine($"{tacoBell1.Name}");
+            Console.WriteLine($"{tacoBell2.Name}");
         }
     }
 }
